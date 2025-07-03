@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   {% load static %}
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/static/assets/css/flaticon.css">
+      <link rel="stylesheet" href="/static/assets/css/remixicon.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/assets/css/odometer.min.css">
+      <link rel="stylesheet" href="/static/assets/css/fancybox.css">
+      <link rel="stylesheet" href="/static/assets/css/aos.css">
+      <link rel="stylesheet" href="/static/assets/css/style.css">
+      <link rel="stylesheet" href="/static/assets/css/responsive.css">
+      <link rel="stylesheet" href="/static/assets/css/dark-theme.css">
+      <title>Trust Edge Your Partner in Financial and Stock banking Success</title>
+      <link rel="icon" type="image/png" href="/static/assets/img/fav.png">
+      <link rel="stylesheet" href="/static/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <script src="/static/code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="/static/code.jquery.com/jquery-3.6.0.min.js"></script>
+      <style>
+         .active {
+         font-weight: bold;
+         }
+      </style>
+      <style>
+         /* Set the height and width of the slideshow container */
+         .slideshow-container {
+         position: relative;
+         width: 100%;
+         height: 700px; /* Default height for larger screens */
+         overflow: hidden;
+         }
+         /* Style the images and overlay */
+         .slide-image {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         }
+         .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.7); /* Change the opacity value to adjust the darkness of the overlay */
+         }
+         /* Style the navigation dots */
+         .dots {
+         position: absolute;
+         bottom: 20px;
+         left: 50%;
+         transform: translateX(-50%);
+         list-style: none;
+         padding: 0;
+         display: flex;
+         opacity: 1;
+         z-index: 1;
+         }
+         .dot {
+         width: 12px;
+         height: 12px;
+         margin: 0 6px;
+         background-color: #fff; /* Change the color of the navigation dots */
+         border-radius: 50%;
+         cursor: pointer;
+         op
+         }
+         .dot.active {
+         background-color: #ff5f16; /* Change the color of the active navigation dot */
+         }
+         /* Add your media queries here */
+         @media screen and (max-width: 768px) {
+         /* Mobile styles here */
+         .slideshow-container {
+         height: 500px; /* Adjust the height for mobile devices */
+         }
+         .slide-image {
+         height: 500px; /* Adjust the image height for mobile devices */
+         }
+         /* Add any other specific styles for mobile here */
+         }
+         @media screen and (min-width: 769px) and (max-width: 1024px) {
+         /* Tablet styles here */
+         .slideshow-container {
+         height: 600px; /* Adjust the height for tablet devices */
+         }
+         .slide-image {
+         height: 600px; /* Adjust the image height for tablet devices */
+         }
+         /* Add any other specific styles for tablets here */
+         }
+         @media screen and (min-width: 1025px) {
+         /* Laptop and larger screen styles here */
+         .slideshow-container {
+         height: 570px; /* Default height for larger screens */
+         }
+         .slide-image {
+         height: 570px; /* Adjust the image height for tablet devices */
+         }
+         /* Add any other specific styles for laptop and larger screens here */
+         }
+      </style>
+   </head>
+   <body>
+      <div id="preloader">
+         <div class="spinner" id="status">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+         </div>
+      </div>
+      <div class="page-wrapper">
+         <div class="switch-theme-mode laptop">
+            <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+            </label>
+         </div>
+         <header class="header-wrap style2">
+            <div class="header-bottom">
+               <div class="container">
+                  <nav class="navbar navbar-expand-md navbar-light">
+                     <a class="navbar-brand" href="{% url 'home' %}">
+                     <img class="logo-light" style="height: 40px; width: 135px;" src="/static/img/logo.png" alt="logo">
+                     <img class="logo-dark" style="height: 40px; width: 135px;" src="/static/img/logo.png" alt="logo">
+                     </a>
+                     <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+                        <div class="menu-close d-lg-none">
+                           <a href="javascript:void(0)"><i class="ri-close-line"></i></a>
+                        </div>
+                        <div class="gtranslate_wrapper"></div>
+                        <script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper"}</script>
+                        <script src="/static/cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script>
+                        <ul class="navbar-nav ms-auto">
+                           <li class="nav-item">
+                              <a href="{% url 'home' %}" class="nav-link active" >Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">
+                              Banking
+                              <i class="ri-arrow-down-s-line"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li class="nav-item">
+                                    <a href="{% url 'current' %}" class="nav-link">Current Account</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="{% url 'saving' %}" class="nav-link">Savings Account</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="{% url 'corporate' %}" class="nav-link">Corporate Account</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="{% url 'kid' %}" class="nav-link">Kid Account</a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class="nav-item">
+                              <a href="{% url 'dashboard' %}" class="nav-link">loan</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="{% url 'dashboard' %}" class="nav-link">Credit Cards</a>
+                           </li>
+                           <li class="nav-item d-lg-none"  style="display: inline-block;">
+                              <a href="{% url 'signup' %}" class="nav-link btn style1">Join Us<i class="ri-arrow-right-s-line"></i></a>
+                              <a href="{% url 'clientsignin' %}" class="nav-link btn style1">Login<i class="ri-arrow-right-s-line"></i></a>
+                           </li>
+                        </ul>
+                        <div class="other-options md-none">
+                           <div class="option-item">
+                              <div class="user-login">
+                                 <span><i class="ri-user-add-line"></i></span>
+                                 <ul class="list-style">
+                                    <li><a href="{% url 'clientsignin' %}">Sign In</a></li>
+                                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="option-item">
+                              <a href="{% url 'signup' %}" class="btn style1">Join Us<i class="ri-arrow-right-s-line"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+                  <div class="mobile-bar-wrap">
+                     <div class="d-lg-none mobile-menu" style="margin-right: 13px;">
+                        <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                        </label>
+                     </div>
+                     <div class="user-login d-lg-none">
+                        <span><i class="ri-user-add-line"></i></span>
+                        <ul class="list-style">
+                           <li><a href="{% url 'clientsignin' %}">Sign In</a></li>
+                           <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                        </ul>
+                     </div>
+                     <div class="mobile-menu d-lg-none">
+                        <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="" style="margin-top:70px ;">
+            <div class="breadcrumb-wrap bg-f br-5">
+               <div class="container">
+                  <div class="breadcrumb-title">
+                     <h2>Contact Us</h2>
+                     <ul class="breadcrumb-menu list-style">
+                        <li><a href="{% url 'home' %}">Home </a></li>
+                        <li>Contact Us</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <section class="contact-us-wrap ptb-100">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="contact-item">
+                           <span class="contact-icon">
+                           <i class="ri-map-pin-line"></i>
+                           </span>
+                           <div class="contact-info">
+                              <h3>Our Location</h3>
+                              <p>United Kingdom
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="contact-item">
+                           <span class="contact-icon">
+                           <i class="ri-mail-send-line"></i>
+                           </span>
+                           <div class="contact-info">
+                              <h3>Email Us</h3>
+                              <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#6c04090000032c0f190914420f0301"><span class="__cf_email__" data-cfemail="660e030a0a09260513031e4805090b">support@Trust Edge</span></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="contactem">
+                           <span class="cont-icon">
+                           <i class="ri-phone"></i>
+                           </span>
+                           <div class="coinfo">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <style type="text/css">
+                     .messages{
+                     color: orange !important;
+                     }
+                  </style>
+                  <div class="row">
+                     <div class="col-lg-7">
+                        <div class="contact-form">
+                           <form method="Post" class="form-wrap" id="contactForm">
+                              {% csrf_token %}
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                       {{form.name}}
+                                       <div class="help-block with-errors"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                       {{form.email}}
+                                       <div class="help-block with-errors"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="form-group v1">
+                                       {{form.message}}
+                                       <div class="help-block with-errors"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <button type="submit" class="btn style1">SEND MESSAGE<i class="ri-arrow-right-s-line"></i></button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                 </div>
+                              </div>
+                           </form>
+                           {% for message in messages %}
+                           <p class="messages">{{message}}</p>
+                           {% endfor %}
+                        </div>
+                     </div>
+                     <div class="col-lg-5">
+                        <div class="comp-map">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8385385572983!2d144.95358331584498!3d-37.81725074201705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sbd!4v1612419490850!5m2!1sen!2sbd">
+                           </iframe>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <footer class="footer-wrap">
+            <div class="container">
+               <div class="row pt-100 pb-75">
+                  <div class="col-xl-3 col-lg-5 col-md-5 col-sm-6">
+                     <div class="footer-widget">
+                        <a href="index-2.html" class="footer-logo">
+                        <img src="/static/img/logo.png" style="height: 40px; width: 145px;" alt="Image">
+                        </a>
+                        <p class="comp-desc">
+                           Trust Edge Empowering your financial growth through smart bankings.
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                     <div class="footer-widget">
+                        <h3 class="footer-widget-title">bank</h3>
+                        <ul class="footer-menu list-style">
+                           <li>
+                              <a href="{% url 'about' %}" target="_blank">
+                              About Us
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-widget">
+                        <h3 class="footer-widget-title">Resources</h3>
+                        <ul class="footer-menu list-style">
+                           <li>
+                              <a href="{% url 'contact' %}" target="_blank">
+                              Contact Us
+                              </a>
+                           </li>
+                           <!-- <li>
+                              <a href="privacy-policy" target="_blank">
+                              Privacy Policy
+                              </a>
+                              </li> -->
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-5 col-md-6 col-sm-6 pe-xl-4">
+                     <div class="footer-widget"></div>
+                  </div>
+                  <div class="col-xl-3 col-lg-7 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                        <h3 class="footer-widget-title">Contact Us</h3>
+                        <ul class="contact-info list-style">
+                           <li>
+                              <i class="ri-mail-open-fill"></i>
+                              <h6>Email</h6>
+                              <a href=""><span class="__cf_email__" data-cfemail="f9919c959596b99a8c9c81d79a9694">support@Trust Edge</span></a>
+                           </li>
+                           <!-- <li>
+                              <i class="ri-phone-fill"></i>
+                              <h6>Phone</h6>
+                              <a href="tel:13454567877">+1-3454-5678-77</a>
+                               </li> -->
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <p class="copyright-text"><i class="ri-copyright-line"></i> <span>Trust Edge</span>.Copyright © 2017- 2024. All Rights Reserved Trust Edge</a></p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <header id="footer"></header>
+      </div>
+      <script>
+         function scrollToSection(sectionId) {
+           const section = document.getElementById(sectionId);
+           section.scrollIntoView({ behavior: 'smooth' });
+         }
+         
+         
+         
+         
+      </script>
+      <script src="/static/header_footer.js"></script>
+      <script>
+         let slideIndex = 0;
+         const slides = document.getElementsByClassName("slide");
+         const dots = document.getElementsByClassName("dot");
+         
+         function showSlides() {
+             for (let i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";
+             }
+             slideIndex++;
+             if (slideIndex > slides.length) {
+                 slideIndex = 1;
+             }
+             for (let i = 0; i < dots.length; i++) {
+                 dots[i].classList.remove("active");
+             }
+             slides[slideIndex - 1].style.display = "block";
+             dots[slideIndex - 1].classList.add("active");
+             setTimeout(showSlides, 13000); // Change the interval (in milliseconds) for sliding to 4000 for 4 seconds
+         }
+         
+         showSlides();
+      </script>
+      <script>
+         function showContent(event, contentId) {
+           event.preventDefault(); // Prevent page scroll to top
+         
+           $(".convert-tabcontent").hide();
+           $(".convert-tablist a").removeClass("active");
+           $("#" + contentId).show();
+           $(event.target).addClass("active");
+         }
+      </script>
+      <script data-cfasync="false" src="/static/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script><script src="/static/assets/js/jquery.min.js"></script>
+      <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/assets/js/form-validator.min.js"></script>
+      <script src="/static/assets/js/contact-form-script.js"></script>
+      <script src="/static/assets/js/aos.js"></script>
+      <script src="/static/assets/js/owl.carousel.min.js"></script>
+      <script src="/static/assets/js/odometer.min.js"></script>
+      <script src="/static/assets/js/jquery.countdown.min.js"></script>
+      <script src="/static/assets/js/fancybox.js"></script>
+      <script src="/static/assets/js/jquery.appear.js"></script>
+      <script src="/static/assets/js/tweenmax.min.js"></script>
+      <script src="/static/assets/js/main.js"></script>
+      <script src="/static/cdn.jsdelivr.net/gh/javimata/whatsapp-widget%401.1.4//static/assets/js/whatsapp.js"></script>
+      <script>
+         var whatsAppBtn = new WhatsAppBtn({ phone: "PhoneNumberGoesHere",  text: "Hi", iconColor: '#fff', backgroundColor: "#4DC247", callTo: "", positionText: "tl", position: "lb", style: "bottom-left:80px", width: "65", ga:['phone','click','whatsapp'], fb:['Contact','Whatsapp'], pi:['Custom','Whatsapp']});
+         whatsAppBtn.renderButton()
+      </script>
+      <!-- Mirrored from templates.hibootstrap.com/Trust Edge/default/index by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Jul 2023 13:47:14 GMT -->
+      <!-- Mirrored from www.Trust Edge/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 May 2024 15:49:00 GMT -->
+</html>
